@@ -434,7 +434,7 @@ class Chameleon:
 
         self.content = f"{w[0]}(" \
                        f"{enc}(" \
-                       f"{conv}('{payload}')));"
+                       f"{conv}(\"{payload}\")));"
 
         if not self.config["no-exit"]:
             self.content += f"{w[1]}"
